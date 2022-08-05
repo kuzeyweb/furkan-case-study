@@ -1,0 +1,33 @@
+@import './_reboot.css';
+
+.wrapper {
+    display: flex;
+}
+.left-section , .right-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.left-section {
+    background: url("../img/banner.svg") no-repeat ;
+    background-size: cover;
+}
+
+
+.right-section {
+    background-color: aqua;
+}
+
+
+@media screen and (max-width:800px) {
+    .wrapper {
+        display: block;
+    }
+    .left-section , .right-section {
+        width: 100%;
+        height: 50vh;
+    }
+    
+}
+
+
