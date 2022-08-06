@@ -36,10 +36,3 @@ prev.addEventListener('click', e => {
         nextButton.classList.remove("hidden");
     }
 })
-
-const heart = document.querySelector('.product-fav');
-
-heart.addEventListener('click' , e => {
-
-    heart.style.color = '#E22828';
-})

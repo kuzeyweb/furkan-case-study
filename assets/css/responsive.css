@@ -57,6 +57,7 @@
     .carousel {
         max-width: 100%;
         overflow: hidden;
+        
     }
     .arrow-right {
         right: 48px;
