@@ -8,6 +8,10 @@ html, body, ul, ol {
     margin: 0;
 }
 
+html {
+    background-color: #fff;
+}
+
 ul, ol {
     list-style: none;
 }

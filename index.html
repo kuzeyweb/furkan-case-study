@@ -1,23 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DigiFist</title>
+    <title>DigiFist Assesment Interview</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+        function noImage(obj) {
+            obj.src = './assets/icon/no-image.svg'
+            obj.parentElement.classList.add('fill');
+            obj.classList.add('center');
+        }
+    </script>
 </head>
+
 <body>
     <main>
         <div class="wrapper">
-            <div class="left-section">
-               
-            </div>
-            <div class="right-section">
+            <div class="">
+                <div class="row">
+                    <div class="left-section">
+                        <div class="banner-img"></div>
+                    </div>
+                    <div class="right-section">
+                        <div class="headline">
+                            <h3></h3>
+                            <div class="headline-text">
+                                <p>At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper
+                                    eu
+                                    proin
+                                    leo gravida cursus.</p>
+                            </div>
+                            <a href="#" class="underline">Shop All Everyday Items</a>
+                        </div>
+                        <div class="carousel">
+                            <div class="arrow-left hidden">
+                                <i class="icon-chevron-left"></i>
+                            </div>
+                            <div class="arrow-right">
+                                <i class="icon-chevron-right"></i>
+                            </div>
+                            <div class="carousel-container">
+                                <div class="product-cards">
+                                    <div class="card">
+                                        <i class="icon-heart card-fav"></i>
+                                        <i class="icon-bag add2-cart"></i>
+                                        <a href="#">
+                                            <img class="icon-new" onerror={noImage(this)}
+                                                src="./assets/icon/new-arrival.svg" alt="">
+                                            <div class="img-container">
+                                                <img class="card-img" onerror={noImage(this)}
+                                                    src="./assets/img/product-01.svg" alt="">
+                                            </div>
+                                          
+                                            <p class="card-title">Signature Hoodie</p>
+                                        </a>
+                                        <div class="card-bottom">
+                                            <div class="card-price">
+                                                <p>€33.95</p>
+                                                <span class="original-price line-through">€39.99</span>
+                                                <span class="discount-price">€23.95</span>
+                                            </div>
+                                            <div class="card-colors">
+                                                <input type="radio" name="color" value="lightblue"
+                                                    style="background-color: #99C3CC;">
+                                                <input type="radio" name="color" value="lightsalmon"
+                                                    style="background-color: #CC9999;">
+                                                <input type="radio" name="color" value="lightpink"
+                                                    style="background-color: #CB99CC;">
+                                                <input type="radio" name="color" value="lightgreen"
+                                                    style="background-color: #A6CC99;">
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <img class="icon-new hidden" onerror={noImage(this)}
+                                                src="./assets/icon/new-arrival.svg" alt="">
+                                            <img class="card-img" onerror={noImage(this)}
+                                                src="./assets/img/product-02.svg" alt="">
+                                            <p class="card-title">Organic Skinny High Waist Jeans</p>
+                                        </a>
+                                        <div class="card-bottom">
+                                            <div class="card-price">
+                                                <p>€33.95</p>
+
+                                            </div>
+                                            <div class="card-colors">
+                                                <input type="radio" name="color" value="lightblue"
+                                                    style="background-color: #99C3CC;">
+                                                <input type="radio" name="color" value="lightsalmon"
+                                                    style="background-color: #CC9999;">
+                                                <input type="radio" name="color" value="lightpink"
+                                                    style="background-color: #CB99CC;">
+                                                <input type="radio" name="color" value="lightgreen"
+                                                    style="background-color: #A6CC99;">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <img class="icon-new hidden" onerror={noImage(this)}
+                                                src="./assets/icon/new-arrival.svg" alt="">
+                                            <img class="card-img" onerror={noImage(this)}
+                                                src="./assets/img/product-03.svg" alt="">
+                                            <p class="card-title">Organic Skinny High Waist Jeans</p>
+                                        </a>
+                                        <div class="card-bottom">
+                                            <div class="card-price">
+                                                <p>€33.95</p>
+                                            </div>
+                                            <div class="card-colors">
+                                                <input type="radio" name="color" value="lightblue"
+                                                    style="background-color: #99C3CC;">
+                                                <input type="radio" name="color" value="lightsalmon"
+                                                    style="background-color: #CC9999;">
+                                                <input type="radio" name="color" value="lightpink"
+                                                    style="background-color: #CB99CC;">
+                                                <input type="radio" name="color" value="lightgreen"
+                                                    style="background-color: #A6CC99;">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <img class="icon-new hidden" onerror={noImage(this)}
+                                                src="./assets/icon/new-arrival.svg" alt="">
+                                            <img class="card-img" onerror={noImage(this)}
+                                                src="./assets/img/product-02.svg" alt="">
+                                            <p class="card-title">Organic Skinny High Waist Jeans</p>
+                                        </a>
+                                        <div class="card-bottom">
+                                            <div class="card-price">
+                                                <p>€33.95</p>
+                                            </div>
+                                            <div class="card-colors">
+                                                <input type="radio" name="color" value="lightblue"
+                                                    style="background-color: #99C3CC;">
+                                                <input type="radio" name="color" value="lightsalmon"
+                                                    style="background-color: #CC9999;">
+                                                <input type="radio" name="color" value="lightpink"
+                                                    style="background-color: #CB99CC;">
+                                                <input type="radio" name="color" value="lightgreen"
+                                                    style="background-color: #A6CC99;">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <img class="icon-new hidden" onerror={noImage(this)}
+                                                src="./assets/icon/new-arrival.svg" alt="">
+                                            <img class="card-img" onerror={noImage(this)}
+                                                src="./assets/img/product-01.svg" alt="">
+                                            <p class="card-title">Organic Skinny High Waist Jeans</p>
+                                        </a>
+                                        <div class="card-bottom">
+                                            <div class="card-price">
+                                                <p>€33.95</p>
+                                            </div>
+
+                                            <div class="card-colors">
+                                                <input type="radio" name="color" value="lightblue"
+                                                    style="background-color: #99C3CC;">
+                                                <input type="radio" name="color" value="lightsalmon"
+                                                    style="background-color: #CC9999;">
+                                                <input type="radio" name="color" value="lightpink"
+                                                    style="background-color: #CB99CC;">
+                                                <input type="radio" name="color" value="lightgreen"
+                                                    style="background-color: #A6CC99;">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>

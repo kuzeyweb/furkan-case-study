@@ -1,33 +1,285 @@
 @import './_reboot.css';
+@import './iconfont.css';
 
-.wrapper {
+/*    ANIMATIONS
+
+        .card-img:hover {
+        transform: scale(1.2);
+        transition: transform .2s;
+        } 
+        .icon-chevron-left:hover, .icon-chevron-right:hover {
+        transition: all 200ms;c
+        color: #fff;
+        border-color: #000;
+        background-color: rgba(0, 0, 0, 0.1);
+*/
+
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std';
+    src: url('../fonts/ITC\ Avant\ Garde\ Gothic\ Bold.otf');
+
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/AvenirLTStd-Book.eot');
+    src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirLTStd-Book.woff2') format('woff2'),
+        url('../fonts/AvenirLTStd-Book.woff') format('woff'),
+        url('../fonts/AvenirLTStd-Book.ttf') format('truetype'),
+        url('../fonts/AvenirLTStd-Book.svg#Avenir LT Std') format('svg');
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "ITC Avant Garde Gothic Std";
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 130%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
     display: flex;
 }
-.left-section , .right-section {
-    width: 100%;
-    height: 100vh;
+
+.underline {
+    border-bottom: 2px solid #000;
 }
 
-.left-section {
-    background: url("../img/banner.svg") no-repeat ;
-    background-size: cover;
+.line-through {
+    text-decoration: line-through;
 }
 
+.hidden {
+    visibility: hidden;
+}
 
+.fill {
+    position: relative;
+    width: 230px;
+    height: 310px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(-50%),translateY(-50%);
+}
+
+.left-section,
 .right-section {
-    background-color: aqua;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner-img {
+    background: url("../img/banner.svg") top/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.headline {
+    margin: 96px 0 0 120px;
+}
+
+.headline>h3:before {
+    margin-right: 106px;
+    content: "Everyday items, we have something to suit every occasion."
+}
+
+.headline-text {
+    margin-right: 168px;
+}
+
+.headline>a {
+    color: #000;
+    font-family: 'Avenir';
+    font-weight: 900;
+    margin-top: 32px;
+    padding-bottom: 5px;
+    margin-bottom: 68px;
+}
+
+.headline-text p {
+    color: #666666;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 12px;
+}
+
+.carousel {
+    position: relative;
+    width: 111%;
+    height: 388.94px;
+    --slide : -19% ;
+    --slider-index : 0;
+}
+
+.carousel-container {
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    transform: translateX(calc(var(--slider-index) * var(--slide)));
+    transition: transform 250ms;
 }
 
 
-@media screen and (max-width:800px) {
-    .wrapper {
-        display: block;
-    }
-    .left-section , .right-section {
-        width: 100%;
-        height: 50vh;
-    }
-    
+.product-cards {
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card:first-child {
+    margin-left: 120px;
+}
+
+.card:not(:first-child) {
+    flex-shrink: 0;
+    margin-left: 32px;
+}
+
+.card-title {
+    margin: 12px 0 4px 0;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+}
+
+.card-bottom {
+    max-width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-colors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-colors:not(:first-child) input[type="radio"] {
+    margin-left: 8px !important;
+}
+
+.card-price>p {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.8px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.card-price>span {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-size: 12.8px;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.discount-price {
+    color: #E22828 !important;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+}
+
+input[type="radio"]:checked {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    line-height: 20px;
+    border: 0.13em solid #fff;
+    outline: 0.12em solid #333;
+}
+
+.icon-new {
+    position: absolute;
+    top: 12px;
+    left: 12px;
 }
 
 
+.icon-chevron-right,
+.icon-chevron-left {
+    width: 16px;
+    height: 16px;
+    padding: 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.arrow-right,
+.arrow-left {
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    transform: translateY(-50%);
+   
+}
+
+.arrow-left {
+    left: 48px;
+}
+
+.arrow-right {
+    right: 128px;
+}
+
+.card-fav {
+    background-color: #fff;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #000 !important;
+    border: 8px solid #fff;
+    visibility: hidden;
+}
+.add2-cart {
+    background-color: #fff;
+    position: absolute;
+    bottom: 96px;
+    right: 16px;
+    color: #000 !important;
+    border: 8px solid #fff;
+    visibility: hidden;
+}

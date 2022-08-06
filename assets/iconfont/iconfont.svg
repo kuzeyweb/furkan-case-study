@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2022 by original authors @ fontello.com</metadata>
+<defs>
+<font id="iconfont" horiz-adv-x="1000" >
+<font-face font-family="iconfont" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="heart" unicode="&#xe806;" d="M688 725c-73 0-143-34-188-87-45 53-115 87-187 87-129 0-230-101-230-229 0-158 142-286 357-481l60-55 60 55c215 195 357 323 357 481 0 128-101 229-229 229z m-184-648l-4-4-4 4c-198 180-329 298-329 419 0 83 62 146 146 146 64 0 126-42 148-99h78c22 57 84 99 149 99 83 0 145-63 145-146 0-121-130-239-329-419z" horiz-adv-x="1000" />
+
+<glyph glyph-name="bag" unicode="&#xe807;" d="M878 488l-213 362h-163l-213-362h-289l109-453c16-76 82-129 158-129h633c76 0 136 53 158 129l109 453h-289z m-327 265h65l158-270h-381l158 270z m419-696c-5-16-10-33-27-43-11-11-27-17-43-17h-633c-16 0-33 6-43 17-11 10-22 27-28 37l-81 340h937l-82-334z" horiz-adv-x="1167" />
+
+<glyph glyph-name="chevron-left" unicode="&#xe808;" d="M710 747a31 31 0 0 0 0-44l-353-353 353-353a31 31 0 0 0-45-44l-375 375a31 31 0 0 0 0 44l375 375a31 31 0 0 0 45 0z" horiz-adv-x="1000" />
+
+<glyph glyph-name="chevron-right" unicode="&#xe809;" d="M290 747a31 31 0 0 0 45 0l375-375a31 31 0 0 0 0-44l-375-375a31 31 0 0 0-45 44l353 353-353 353a31 31 0 0 0 0 44z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
