@@ -8,7 +8,8 @@ const prev = document.querySelector('.icon-chevron-left');
 const prevButton = document.querySelector('.arrow-left');
 const nextButton = document.querySelector('.arrow-right');
 
-let mob_view = window.matchMedia("(max-width: 768px)");
+  
+  var mob_view = window.matchMedia("(max-width: 768px)")
 
 let progress = 0;
 
@@ -20,7 +21,10 @@ next.addEventListener('click', e => {
     if (progress > 0) {
         prevButton.classList.remove("hidden");
     }
-    if (progress == itemCount - 1) {
+    if (mob_view.matches && progress === itemCount - 1) {
+        nextButton.classList.add("hidden");
+    }
+    else if(!mob_view.matches && progress === itemCount - 2 ) {
         nextButton.classList.add("hidden");
     }
 

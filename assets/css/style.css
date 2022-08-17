@@ -1,18 +1,20 @@
 @import './_reboot.css';
 @import './iconfont.css';
 
-/*    ANIMATIONS
+
+/* 
+        ANIMATIONS
 
         .card-img:hover {
         transform: scale(1.2);
         transition: transform .2s;
         } 
         .icon-chevron-left:hover, .icon-chevron-right:hover {
-        transition: all 200ms;c
+        transition: all 200ms;
         color: #fff;
         border-color: #000;
-        background-color: rgba(0, 0, 0, 0.1);
-*/
+        background-color: rgba(0, 0, 0, 0.1);}
+ */
 
 @font-face {
     font-family: 'ITC Avant Garde Gothic Std';
@@ -139,7 +141,7 @@ h6 {
     position: absolute;
     align-items: center;
     transform: translateX(calc(var(--slider-index) * var(--slide)));
-    transition: transform 250ms;
+    transition: transform 350ms;
 }
 
 
