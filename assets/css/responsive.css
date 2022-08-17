@@ -106,7 +106,12 @@
     .img-container {
         position: relative;
         max-height: 200px;
+        max-width: 148px;
     }
+    .arrow-right,
+.arrow-left {
+    top: 25%;
+}
 }
 
 @media screen and (min-width:768px){

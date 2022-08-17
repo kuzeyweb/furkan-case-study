@@ -33,6 +33,7 @@
 body {
     max-width: 100vw;
     max-height: 100vh;
+    overflow: scroll;
 }
 
 h1,
@@ -139,7 +140,7 @@ h6 {
     position: absolute;
     align-items: center;
     transform: translateX(calc(var(--slider-index) * var(--slide)));
-    transition: transform 350ms;
+    transition: transform 300ms;
 }
 
 
@@ -150,7 +151,6 @@ h6 {
 
 .card {
     position: relative;
-    cursor: pointer;
 }
 
 .card:first-child {
