@@ -139,7 +139,7 @@ h6 {
     position: absolute;
     align-items: center;
     transform: translateX(calc(var(--slider-index) * var(--slide)));
-    transition: transform 250ms;
+    transition: transform 350ms;
 }
 
 

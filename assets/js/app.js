@@ -27,11 +27,10 @@ next.addEventListener('click', e => {
     if (progress == 1){
         carousel.style.setProperty("--slide", '-16.5%');
     }
-    if (mob_view.matches === true && progress === Math.ceil(itemCount / 2) + 1){
+    if (mob_view.matches === true & progress === Math.ceil(itemCount / 2) + 1){
         nextButton.classList.add("hidden");
-        console.log("mrb")
     }
-    else if(mob_view.matches === false && progress === itemCount - 2 ) {
+    else if(mob_view.matches === false & progress === itemCount - 2 ) {
         nextButton.classList.add("hidden");
     }
 

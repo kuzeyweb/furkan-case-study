@@ -89,8 +89,8 @@
         margin-top: 6px;
         margin-left: -6px;
     }
-    .card:nth-child(1) > .card-title::before {
-        content: 'Organic Skinny High Waist Raw Hem 1231';
+    .card:nth-child(1)  .card-title::before {
+        content: 'Organic Skinny High Waist Raw Hem';
     }
     .card:nth-child(2) > .card-title::before {
         content: 'Organic Skinny High Waist Raw Hem Jeans';
