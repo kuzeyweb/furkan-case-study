@@ -1,4 +1,8 @@
 @media screen and (max-width:768px) {
+    html,body,main {
+        width: 100vw;
+        height: 100vh;
+    }
     .banner-img {
         background: linear-gradient(
             rgba(0, 0, 0, 0.0) 0%,
@@ -7,13 +11,17 @@
             rgba(0, 0, 0, 0.3) 90%,
             rgba(0, 0, 0, 0.5) 95%,
             rgba(0, 0, 0, 0.5) 100%
-          ), url("../img/banner.svg") top/cover no-repeat;  
+          ), url("../img/banner.svg") top/contain no-repeat;  
     }
     .container {
         margin: 0;
     }
+    .wrapper, .wrapper > div {
+        height: inherit;
+    }
     .row {
         display: block;
+        height: inherit;
     }
     .left-section , .right-section {
         width: 100%;
@@ -22,8 +30,8 @@
     }
     .right-section  h3 {
         color: #fff;
-        margin-top: -200px;
-
+        margin-top: -50%;
+        height: inherit;
     }
     .headline {
         margin: 0 24px;
@@ -52,21 +60,52 @@
     }
     .carousel-container {
         z-index: 3;
-
     }
     .carousel {
         max-width: 100%;
         overflow: hidden;
-        
     }
     .arrow-right {
         right: 48px;
+    }
+    .card-title {
+        max-width: 148px;
+        white-space: initial;
+        word-wrap: break-word
+
     }
     .card-fav {
         visibility: visible;
     }
     .add2-cart {
         visibility: visible; 
+    }
+    .card-bottom {
+        display: block;
+        justify-content: unset;
+        
+    }
+    .card-colors {
+        margin-top: 6px;
+        margin-left: -6px;
+    }
+    .card:nth-child(1) > .card-title::before {
+        content: 'Organic Skinny High Waist Raw Hem 1231';
+    }
+    .card:nth-child(2) > .card-title::before {
+        content: 'Organic Skinny High Waist Raw Hem Jeans';
+    }  
+    .card-img {
+        width: 148px;
+        height: 200px;
+    }
+    .card:not(:first-child) {
+        flex-shrink: 0;
+        margin-left: 12px;
+    }
+    .img-container {
+        position: relative;
+        max-height: 200px;
     }
 }
 

@@ -3,8 +3,6 @@
 
 
 /* 
-        ANIMATIONS
-
         .card-img:hover {
         transform: scale(1.2);
         transition: transform .2s;
@@ -131,8 +129,8 @@ h6 {
 .carousel {
     position: relative;
     width: 111%;
-    height: 388.94px;
-    --slide : -19% ;
+    height: 411px;
+    --slide : -16.5% ;
     --slider-index : 0;
 }
 
@@ -141,7 +139,7 @@ h6 {
     position: absolute;
     align-items: center;
     transform: translateX(calc(var(--slider-index) * var(--slide)));
-    transition: transform 350ms;
+    transition: transform 250ms;
 }
 
 
@@ -163,6 +161,8 @@ h6 {
     flex-shrink: 0;
     margin-left: 32px;
 }
+
+
 
 .card-title {
     margin: 12px 0 4px 0;
@@ -233,14 +233,11 @@ input[type="radio"]:checked {
     border: 0.13em solid #fff;
     outline: 0.12em solid #333;
 }
-
 .icon-new {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 8px;
+    left: 8px;
 }
-
-
 .icon-chevron-right,
 .icon-chevron-left {
     width: 16px;
@@ -248,7 +245,6 @@ input[type="radio"]:checked {
     padding: 10px 5px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .arrow-right,
 .arrow-left {
     cursor: pointer;
@@ -256,32 +252,32 @@ input[type="radio"]:checked {
     z-index: 5;
     top: 40%;
     transform: translateY(-50%);
-   
 }
-
 .arrow-left {
     left: 48px;
 }
-
 .arrow-right {
     right: 128px;
 }
-
 .card-fav {
-    background-color: #fff;
     position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #000 !important;
-    border: 8px solid #fff;
+    top: 8px;
+    right: 8px;
     visibility: hidden;
+    border: 8px solid #fff;
+    background-color: #fff;
 }
 .add2-cart {
-    background-color: #fff;
     position: absolute;
-    bottom: 96px;
-    right: 16px;
-    color: #000 !important;
-    border: 8px solid #fff;
+    bottom: 8px;
+    right: 8px;
     visibility: hidden;
+    border: 8px solid #fff;
+    background-color: #fff;
+}
+.card:nth-child(1) .card-title::before {
+    content: '365 Signature Hoodie';
+}
+.card:nth-child(2) .card-title::before {
+    content: 'Organic Skinny High Waist Jeans';
 }

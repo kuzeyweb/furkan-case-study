@@ -21,10 +21,17 @@ next.addEventListener('click', e => {
     if (progress > 0) {
         prevButton.classList.remove("hidden");
     }
-    if (mob_view.matches && progress === itemCount - 1) {
-        nextButton.classList.add("hidden");
+    if(progress == 1){
+        carousel.style.setProperty("--slide", '-17.5%');
     }
-    else if(!mob_view.matches && progress === itemCount - 2 ) {
+    if (progress == 1){
+        carousel.style.setProperty("--slide", '-16.5%');
+    }
+    if (mob_view.matches === true && progress === Math.ceil(itemCount / 2) + 1){
+        nextButton.classList.add("hidden");
+        console.log("mrb")
+    }
+    else if(mob_view.matches === false && progress === itemCount - 2 ) {
         nextButton.classList.add("hidden");
     }
 
