@@ -14,6 +14,9 @@
                 rgba(0, 0, 0, 0.3) 90%,
                 rgba(0, 0, 0, 0.5) 95%,
                 rgba(0, 0, 0, 0.5) 100%), url("../img/banner.svg") top/contain no-repeat;
+        width: 360px;
+        height: 437px;
+        margin: 0 auto;
     }
 
     .container {
@@ -37,6 +40,11 @@
         overflow: visible;
     }
 
+    .arrow-right,
+    .arrow-left {
+        top: 25%;
+    }
+
     .right-section h3 {
         color: #fff;
         margin-top: -50%;
@@ -52,11 +60,7 @@
         line-height: 26px;
     }
 
-    .headline>h3:before {
-        content: none
-    }
-
-    .headline>h3:after {
+    .headline>h3::before {
         content: "Everyday tops, we have something to suit every occasion.";
     }
 
